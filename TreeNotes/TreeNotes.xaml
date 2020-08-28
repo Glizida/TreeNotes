@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Menu  Grid.ColumnSpan="2" Height="20" VerticalAlignment="Top">
+            
+        </Menu>
+        <Grid Grid.Column="0">
+
+        </Grid>
+        <Grid Grid.Column="1">
+
+        </Grid>
 
     </Grid>
 </Window>
