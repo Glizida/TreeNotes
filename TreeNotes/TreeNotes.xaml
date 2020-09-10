@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TreeNotes"
+        xmlns:jlinq="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+   <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -15,11 +16,11 @@
             
         </Menu>
         <Grid Grid.Column="0">
-
+            <TreeView Name="TreeViewNotes">
+            </TreeView>
         </Grid>
         <Grid Grid.Column="1">
 
         </Grid>
-
     </Grid>
 </Window>
