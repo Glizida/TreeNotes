@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
+﻿using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using TreeNotes.Class;
-using Newtonsoft.Json.Linq;
 
 namespace TreeNotes
 {
@@ -16,16 +10,37 @@ namespace TreeNotes
 
     public partial class MainWindow : Window
     {
-        struct datanotes
+        public class Node
         {
-
+            public string Name { get; set; }
+            public ObservableCollection<Node> Nodes { get; set; }
         }
+
+        ObservableCollection<Node> nodes;
 
         public MainWindow()
         {
             InitializeComponent();
 
-
+            nodes = new ObservableCollection<Node>
+            {
+                new Node()
+                {
+                    Name = "Нода 1",
+                    Nodes = new ObservableCollection<Node>
+                    {
+                        new Node()
+                        {
+                            Name = "Нода 2"
+                        }
+                    }
+                },
+                new Node()
+                {
+                    Name = "Нода 3"
+                }
+            };
+            TreeViewNotes.ItemsSource = nodes;
         }
     }
 }

@@ -17,6 +17,11 @@
         </Menu>
         <Grid Grid.Column="0">
             <TreeView Name="TreeViewNotes">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Path=Nodes}">
+                        <TextBlock Text="{Binding Name}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
             </TreeView>
         </Grid>
         <Grid Grid.Column="1">
