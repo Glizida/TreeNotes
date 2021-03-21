@@ -1,0 +1,80 @@
+  [
+    {
+      "Name": "Европа",
+      "Nodes": [
+        {
+          "Name": "Германия",
+          "Nodes": null,
+          "Text": ""
+        },
+        {
+          "Name": "Франция",
+          "Nodes": null,
+          "Text": ""
+        },
+        {
+          "Name": "Великобритания",
+          "Nodes": [
+            {
+              "Name": "Англия",
+              "Nodes": null,
+              "Text": ""
+            },
+            {
+              "Name": "Шотландия",
+              "Nodes": null,
+              "Text": ""
+            },
+            {
+              "Name": "Уэльс",
+              "Nodes": null,
+              "Text": ""
+            },
+            {
+              "Name": "Сев. Ирландия",
+              "Nodes": null,
+              "Text": ""
+            }
+          ],
+          "Text": ""
+        }
+      ],
+      "Text": "Привет Гейропа! :)"
+    },
+    {
+      "Name": "Азия",
+      "Nodes": [
+        {
+          "Name": "Китай",
+          "Nodes": null,
+          "Text": ""
+        },
+        {
+          "Name": "Япония",
+          "Nodes": null,
+          "Text": ""
+        },
+        {
+          "Name": "Индия",
+          "Nodes": null,
+          "Text": ""
+        }
+      ],
+      "Text": "Приветики! Азиат ебаный)"
+    },
+    {
+      "Name": "Африка",
+      "Nodes": null,
+      "Text": ""
+    },
+    {
+      "Name": "Америка",
+      "Nodes": null,
+      "Text": ""
+    },
+    {
+      "Name": "Австралия",
+      "Nodes": null,
+      "Text": ""
+    }
+  ]

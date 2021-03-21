@@ -6,17 +6,20 @@
         xmlns:local="clr-namespace:TreeNotes"
         xmlns:jlinq="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-   <Grid>
+        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded">
+
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Menu  Grid.ColumnSpan="2" Height="20" VerticalAlignment="Top">
-            
+
+        <Menu>
+            <MenuItem Header="Menu"></MenuItem>
         </Menu>
-        <Grid Grid.Column="0">
-            <TreeView Name="TreeViewNotes">
+
+        <Grid Margin="0,20,0,0" Grid.Column="0">
+            <TreeView x:Name="TreeView" MouseUp="TreeView_MouseUp">
                 <TreeView.ItemTemplate>
                     <HierarchicalDataTemplate ItemsSource="{Binding Path=Nodes}">
                         <TextBlock Text="{Binding Name}" />
@@ -25,7 +28,9 @@
             </TreeView>
         </Grid>
         <Grid Grid.Column="1">
-
+            <ScrollViewer>
+                <TextBox x:Name="TextBox" TextChanged="TextBox_TextChanged"></TextBox>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Window>
